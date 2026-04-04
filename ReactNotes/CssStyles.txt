@@ -1,0 +1,7 @@
+// How to style React Components with css -:
+
+// 1. Extrenal - means using index.css or App.css - for global styles and small projects
+
+// 2. Modules - means creating a seperate folder for a component and styling it in fileName.module.css - for individual components best practice
+
+// 3. Inline - means applying styles directly to an element using the style attribute in JSX, written as a JavaScript object inside the component - easy but reduces readability

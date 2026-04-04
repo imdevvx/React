@@ -1,0 +1,6 @@
+click event = An interaction when user clicks on a specific element. 
+
+We can respond to clicks by passing a callback event handler.
+
+onClick = {handleClick("Dev")} = if you add a set of paranthesis after a callback you will invoke it ryt away
+-- to solve do onClick = {() => handleClick("Dev")}

@@ -1,0 +1,28 @@
+1 - useEffect() = React Hook that tells React DO SOME CODE WHEN (pick one):
+
+- This component re-renders
+- This component mounts
+- The state of a value
+
+
+2 - useEffect(function, [dependencies])
+
+a. useEffect(() => {})  - Runs after every re-render
+
+b. useEffect(() => {}, [])  - Runs only one mount (means only runs one time when triggered)
+
+c. useEffect(() => {}, [value])  - Runs on mount + when value changes (means only run one time when triggered and Do the code only when [value] changes)
+
+
+3 - Uses
+
+a. Event listeners
+a. Dom manipulation
+a. subscription (real-time updates)
+a. Fetching data from an API
+a. Clean up when a component unmounts
+
+{mount means when we add a component to the dom 
+unmount means when we remove a component from the dom}
+
+- useEffect lets us run side effects (like setInterval, API calls, event listeners, etc.) only when needed

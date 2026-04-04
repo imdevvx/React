@@ -1,0 +1,27 @@
+When we console something in react we see it twice in the console tab because of the strict mode we can disable it by removing strict mode from main.jsx file -:
+
+
+Main.jsx file with strict mode -:
+
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+
+
+Main.jsx file without strict mode -:
+
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+    <App />
+)

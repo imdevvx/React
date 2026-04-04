@@ -1,0 +1,19 @@
+1. props = read-only properties that are shared bw components
+
+-- A parent component can send data to a child component.
+-- <Component key=value />
+
+props is going to be a javascript object
+
+----------------------------------------------------------------
+
+2. propTypes = a mechanism that ensures that the passed value is of the correct data type
+
+-- age: propTypes.number {Because we must ensure that the passed value in age is a number}
+-- name: propTypes.string {.... that the passed value in age is a string}
+
+----------------------------------------------------------------
+
+3. Default props = default values for props in case they are not passed from the present component
+
+-- name: "Guest"

@@ -1,0 +1,17 @@
+useState() = Re-renders the component when the state value changes.
+
+useRef() = "use Reference" Does not cause re-renders when its value changes.
+            when you want a component to "remember" some informaton,
+            but you don't want that informaton to trigger new renders.
+
+            1. Accesngn/Iteractng with dom elements
+            2. Handling Focus, Animations, and Transitions
+            3. Managing Timers and Intervals
+
+            useRef returns a "ref object" with a single "current property" initially set to the "initial value" you provided
+
+=> useState → component re-renders every time
+   Because setState() causes a render.
+
+   useRef (WITHOUT forcing render) → component does NOT re-render
+   But the UI will not update, because refs do not trigger rendering.
