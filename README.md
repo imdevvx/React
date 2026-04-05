@@ -126,8 +126,8 @@ myreact_app/
 
 ### 1. Clone the repository
 ```
-git clone https://github.com/syncdecodes/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/imdevvx/React.git
+cd React
 ```
 
 ### 2. Install dependencies
