@@ -1,4 +1,4 @@
-# ⚛️ DECODING REACT
+# ⚛️ REACT
 
 A structured and hands-on **React learning repository** built while exploring modern frontend development.  
 This repository contains reusable components, feature-based modules, hooks, and mini-projects — all designed to build a strong foundation in React.
@@ -34,40 +34,63 @@ It includes:
 ## 📂 Project Structure
 
 myreact_app/
-
+│
 ├── public/
+│
 ├── src/
-│ ├── assets/
-│ ├── components/
-│ │ ├── Button.jsx
-│ │ ├── Card.jsx
-│ │ ├── Header.jsx
-│ │ └── Footer.jsx
-│ │
-│ ├── features/
-│ │ ├── Food/
-│ │ │ └── Food.jsx
-│ │ ├── Todo/
-│ │ │ └── ToDoList.jsx
-│ │ ├── UIExamples/
-│ │ │ ├── DigitalClock.jsx
-│ │ │ ├── stopWatch.jsx
-│ │ │ ├── useEffect.jsx
-│ │ │ ├── useRef.jsx
-│ │ │ └── more...
-│ │
-│ ├── hooks/
-│ │ └── useToggle.jsx
-│ │
-│ ├── pages/
-│ ├── utils/
-│ │
-│ ├── App.jsx
-│ ├── main.jsx
-│ └── App.css
+│   ├── assets/
+│   │   └── react.svg
+│   │
+│   ├── components/
+│   │   ├── Button.jsx
+│   │   ├── Card.jsx
+│   │   ├── Header.jsx
+│   │   └── Footer.jsx
+│   │
+│   ├── features/
+│   │   ├── Food/
+│   │   │   └── Food.jsx
+│   │   │
+│   │   ├── Todo/
+│   │   │   └── ToDoList.jsx
+│   │   │
+│   │   ├── UIExamples/
+│   │   │   ├── 1.1_ComponentA.jsx
+│   │   │   ├── 1.2_ComponentB.jsx
+│   │   │   ├── 1.3_ComponentC.jsx
+│   │   │   ├── 1.4_ComponentD.jsx
+│   │   │   ├── 2.1_useRef.jsx
+│   │   │   ├── 2.2_useRef&useState.jsx
+│   │   │   ├── ClickEvents.jsx
+│   │   │   ├── ColorPicker.jsx
+│   │   │   ├── DigitalClock.jsx
+│   │   │   ├── List.jsx
+│   │   │   ├── OnChange.jsx
+│   │   │   ├── PropTypes1.jsx
+│   │   │   ├── PropTypes2.jsx
+│   │   │   ├── stopWatch.jsx
+│   │   │   ├── UpdaterFunction.jsx
+│   │   │   ├── UpdaterFunction2.jsx
+│   │   │   ├── useEffect.jsx
+│   │   │   └── UseStates.jsx
+│   │
+│   ├── hooks/
+│   │   └── useToggle.jsx
+│   │
+│   ├── pages/
+│   │
+│   ├── utils/
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
 │
 ├── index.html
 ├── package.json
+├── package-lock.json
+├── eslint.config.js
+├── .gitignore
 └── vite.config.js
 
 ---
