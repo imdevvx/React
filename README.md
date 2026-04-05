@@ -33,6 +33,7 @@ It includes:
 
 ## 📂 Project Structure
 
+```bash
 myreact_app/
 │
 ├── public/
@@ -92,6 +93,7 @@ myreact_app/
 ├── eslint.config.js
 ├── .gitignore
 └── vite.config.js
+```
 
 ---
 
