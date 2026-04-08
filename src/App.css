@@ -1,0 +1,366 @@
+/* MODERN RESET & VARIABLES */
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --bg-body: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+  --shadow-md: 0 10px 15px -3px rgba(0,0,0,0.05), 0 4px 6px -2px rgba(0,0,0,0.05);
+  --radius: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img, svg, canvas {
+  max-width: 100%;
+  display: block;
+}
+
+html, body{
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* MAIN CONTAINER */
+.app-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 2rem;
+}
+
+/* SECTION TITLES */
+h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+  border-left: 4px solid var(--primary);
+  padding-left: 12px;
+}
+
+/* SECTION CARD - The "Boutique" Look */
+.section {
+  background: var(--bg-card);
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08);
+}
+
+/* BUTTONS */
+button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 6px;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* FORM ELEMENTS */
+input, textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background-color: #f1f5f9;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+input:focus {
+  border: 2px solid var(--primary);
+  background-color: #fff;
+}
+
+/* FEATURE SPECIFIC STYLES */
+.todo-box {
+  background: #fdfdfd;
+  border: 1px dashed var(--border-color);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+}
+
+.color-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circle looks more premium for color pickers */
+  border: 4px solid white;
+  box-shadow: var(--shadow-md);
+  margin: 2rem auto;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 4rem 0;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* PROFILE CARD OVERRIDE */
+.card {
+  background: linear-gradient(145deg, #ffffff, #f1f5f9);
+  width: 100%;
+  max-width: 320px;
+  margin: 1rem auto;
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+
+
+
+
+/* TO DO LIST SPECIFIC */
+.todo-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.todo-input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.todo-input-group input {
+    flex: 1; /* Takes up remaining space */
+    max-width: none;
+}
+
+.add-btn {
+    margin: 0;
+    padding: 0 1.5rem;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.todo-item:hover {
+    border-color: #2563eb;
+    background: #fff;
+}
+
+.todo-text {
+    font-weight: 500;
+    color: #1e293b;
+    flex: 1;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 5px;
+}
+
+/* Specific button overrides for the list */
+.move-btn {
+    background: #f1f5f9;
+    color: #000;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+}
+
+.move-btn:hover {
+    background: #e2e8f0;
+}
+
+.delete-btn {
+    background-color: #fee2e2;
+    color: #dc2626;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+}
+
+.delete-btn:hover {
+    background-color: #f87171;
+    color: white;
+}
+
+
+
+
+/* INPUTS & TEXTAREAS - FIXED VISIBILITY */
+input, 
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background-color: #f1f5f9; /* Light grey bg */
+  color: #1e293b;            /* Deep dark text - ALWAYS VISIBLE */
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+input:focus, 
+textarea:focus {
+  border: 2px solid var(--primary);
+  background-color: #ffffff; /* White bg on focus */
+  color: #0f172a;            /* Ensure text stays dark when focused */
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1); /* Subtle blue glow */
+}
+
+/* Specifically for the ToDo input since it's on a white section */
+.taskInput {
+  color: #1e293b !important;
+}
+
+/* Placeholder color to make it look even more professional */
+input::placeholder {
+  color: #94a3b8;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE MEDIA QUERIES */
+
+/* For Tablets and smaller screens (Max-width: 768px) */
+@media (max-width: 768px) {
+  .app-container {
+    margin: 20px auto;
+    padding: 0 0.8rem;
+  }
+
+  .section {
+    padding: 1rem; /* Reduced padding for more screen space */
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .todo-input-group {
+    flex-direction: column; /* Stack input and add button */
+  }
+
+  .add-btn {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .card img, .section img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* For Mobile Phones (Max-width: 480px) */
+@media (max-width: 480px) {
+  .section {
+    padding: 1.25rem;
+    border-radius: 12px; /* Slightly smaller radius for small screens */
+  }
+
+  /* Make To-Do items stack buttons if the text is long */
+  .todo-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .todo-actions {
+    width: 100%;
+    justify-content: flex-start;
+    border-top: 1px solid var(--border-color);
+    padding-top: 10px;
+  }
+
+  .todo-text {
+    width: 100%;
+    word-break: break-word;
+  }
+
+  button {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    margin: 4px 2px;
+  }
+
+  /* Ensure inputs take full width */
+  input, textarea {
+    max-width: 100%;
+  }
+
+  .color-box {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* For Very Small Devices (Avoid horizontal scrolling) */
+@media (max-width: 320px) {
+  .todo-actions {
+    flex-wrap: wrap; /* Wrap buttons if screen is tiny */
+  }
+  
+  .move-btn, .delete-btn {
+    flex: 1; /* Buttons grow to fill space */
+    text-align: center;
+  }
+}
